@@ -138,7 +138,7 @@ and open the template in the editor.
                 <br><br>
 
 
-
+                Calcul dans output
                 <form oninput='tva.value=((a.value)*(b.value))' action="nouveautes.php" method="POST">
                     <input type="number" name="a" value="" />
                     <input type="hidden" name="b" value="0.052133" /> =
@@ -164,6 +164,31 @@ and open the template in the editor.
                     echo "Date anniversaire : $msg";
                 }
                 ?>
+                
+                
+                <br>
+                Heures 
+                <form action="nouveautes.php" method="post" >
+
+                    
+                    <input type="time" name="time" max="18:00" min="14:00" value="" step="1800" />
+                 
+                </form>
+                
+                <br>
+                Range + output
+                <form oninput='range.value=(a.value)' action="nouveautes.php" method="post" >
+                <input type="range" name="a"value="0" max="50" min="0" step="5">
+                <output id="range" name="range" value="0"></output>
+                </form>
+                
+                
+                <br>
+                Type Number
+                <form oninput='range.value=(a.value)' action="nouveautes.php" method="post" >
+                <input type="number" name="a"value="0" max="50" min="0" step="5">
+                <output id="range" name="range" value="0"></output>
+                </form>
 
             </div>
         </div>
