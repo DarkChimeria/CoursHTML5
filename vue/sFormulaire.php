@@ -19,7 +19,7 @@ and open the template in the editor.
                 <li><a href="./sArticle.html">Article</a></li>
                 <li><a href="./sArticle.html">Détails</a></li>
                 <li><a href="./sListe.html">Listes</a></li>
-                <li><a href="./sFormulaire.php">Listes</a></li>
+                <li><a href="./sFormulaire.php">Formulaires</a></li>
             </ul>
             <ul class="navbarright">
                 <li><a href="#">Connexion</a></li>
