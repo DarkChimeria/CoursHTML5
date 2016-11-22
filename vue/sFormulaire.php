@@ -9,14 +9,14 @@ and open the template in the editor.
         <title>Formulaires - Cours HTML 5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link href="../css/template.css" rel="stylesheet">
+        <link rel="icon" href="http://92.39.241.41/plesk-site-preview/aslimani.fr/92.39.241.41/CoursHTML5/img/favicon.ico" />
     </head>
     <body>
         <div class="nav">
             <ul class="navbarleft">
                 <li class="active"><a href="../index.html">Home</a></li>
-                <li><a href="./sArticle.html">Article</a></li>
+                <li><a href="./sArticle.html">Articles</a></li>
                 <li><a href="./sArticle.html">Détails</a></li>
                 <li><a href="./sListe.html">Listes</a></li>
                 <li><a href="./sFormulaire.php">Formulaires</a></li>
@@ -220,7 +220,7 @@ and open the template in the editor.
                     echo "Date anniversaire : $msg";
                 }
                 ?>
-                
+
                 <h3>Formulaire 9</h3>
 
 
@@ -242,8 +242,7 @@ and open the template in the editor.
             </div>
         </div>
         <div id="footer">
-            Test
-            test
+            Footer
         </div>
 
 
