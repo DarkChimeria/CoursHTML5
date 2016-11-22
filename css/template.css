@@ -9,9 +9,12 @@ and open the template in the editor.
 */
 
 
-body{
-
-
+.code{
+    
+    color: #ea7600;
+    background-color: #1c1c1c;
+    width: 50%;
+    
 }
 
 #global{
@@ -104,10 +107,6 @@ h1{
 
 }
 
-p{
-    
-    
-}
 
 .infos{
 
@@ -138,4 +137,6 @@ p{
     
 
 }
+
+
 
