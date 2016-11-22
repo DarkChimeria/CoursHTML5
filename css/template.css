@@ -17,6 +17,12 @@ and open the template in the editor.
     
 }
 
+.code vert{
+    
+    color: green;
+    
+}
+
 #global{
   width:100%;
 }
