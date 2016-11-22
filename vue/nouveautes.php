@@ -15,11 +15,12 @@ and open the template in the editor.
     <body>
         <div class="nav">
             <ul class="navbarleft">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="./vue/sArticle.html">Articles</a></li>
-                <li><a href="./vue/sArticle.html">Détails</a></li>
-                <li><a href="./vue/sListe.html">Listes</a></li>
-                <li><a href="./vue/sFormulaire.php">Formulaires</a></li>
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="./sArticle.html">Articles</a></li>
+                <li><a href="./sArticle.html">Détails</a></li>
+                <li><a href="./sListe.html">Listes</a></li>
+                <li><a href="./sFormulaire.php">Formulaires</a></li>
+                <li><a href="./nouveautes.php">Nouveautés</a></li>
             </ul>
             <ul class="navbarright">
                 <li><a href="#">Connexion</a></li>
@@ -97,12 +98,6 @@ and open the template in the editor.
                 <hr>
                 <br>
 
-                <form method="POST" action="nouveautes.php" oninput="result.value=parseInt(nombre.value)*parseInt(taxe.value)">
-
-                    <input type="number" name="nombre" value="" id/>
-                    <input type="hidden" name="taxe" value="19,6"/>
-                    <output for="nombre taxe" name="ttc" form="tva_form"></output> €
-                </form>
 
 
 
@@ -150,6 +145,25 @@ and open the template in the editor.
                     <output id="tva" name="result" value="0"></output>€
                 </form>
 
+                
+                <br>
+                
+                Date<br>
+
+
+                 <form action="nouveautes.php" method="post" >
+
+                    
+                    <input type="date" name="anniversaire" max="2012-06-25" min="2011-08-13">
+                    <input type="submit" name="choisir06" value="Choisir"/>
+
+                </form>
+                <?php
+                if (isset($_POST['choisir06'])) {
+                    $msg = $_POST['anniversaire'];
+                    echo "Date anniversaire : $msg";
+                }
+                ?>
 
             </div>
         </div>
