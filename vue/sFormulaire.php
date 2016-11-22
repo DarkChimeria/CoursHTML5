@@ -154,7 +154,7 @@ and open the template in the editor.
 
 
 
-                <h3>Formulaire 6</h3>
+                <h3>Formulaire 7</h3>
 
 
                 <form action="sFormulaire.php" method="post" >
@@ -179,7 +179,24 @@ and open the template in the editor.
 
                 <br>
 
+                <h3>Formulaire 8</h3>
 
+
+                <form action="sFormulaire.php" method="post" >
+
+                    Zone de texte<br />
+                    <textarea name="obs" rows="4" cols="20"> Un Commentaire ?</textarea><br>
+                    <input type="submit" name="choisir05" value="Choisir"/>
+
+                </form>
+                <?php
+                if (isset($_POST['choisir05'])) {
+                    $msg = $_POST['obs'];
+                    echo "Observations : $msg";
+                }
+                ?>
+
+                <br>
 
 
 
@@ -187,9 +204,41 @@ and open the template in the editor.
             </div><!-- correction whitespace
           
             --><div id="droite">
-                Formulaire<br>
-                Formulaire<br>
-                Formulaire
+                <h3>Formulaire 9</h3>
+
+
+                <form action="sFormulaire.php" method="post" >
+
+                    Zone de texte<br />
+                    <input type="date" name="anniversaire" max="2012-06-25" min="2011-08-13">
+                    <input type="submit" name="choisir06" value="Choisir"/>
+
+                </form>
+                <?php
+                if (isset($_POST['choisir06'])) {
+                    $msg = $_POST['anniversaire'];
+                    echo "Date anniversaire : $msg";
+                }
+                ?>
+                
+                <h3>Formulaire 9</h3>
+
+
+                <form action="sFormulaire.php" method="post" >
+
+                    Zone de type hidden<br />
+                    <input type="hidden" name="identifiant" value="32">
+                    <input type="submit" name="choisir07" value="Choisir"/>
+
+                </form>
+                <?php
+                if (isset($_POST['choisir07'])) {
+                    $msg = $_POST['identifiant'];
+                    echo "Identifiant : $msg";
+                }
+                ?>
+
+                <br>
             </div>
         </div>
         <div id="footer">
