@@ -189,6 +189,29 @@ and open the template in the editor.
                 <input type="number" name="a"value="0" max="50" min="0" step="5">
                 <output id="range" name="range" value="0"></output>
                 </form>
+                
+                               
+                <br>
+                Type Tel
+                <form oninput='tel.value=(a.value)' action="nouveautes.php" method="post" >
+                +33<input type="tel" name="a"value="0" >
+                <output id="tel" name="tel" value="0"></output>
+                </form>
+                
+                <br>
+                Type url/ email
+                <form oninput='tel.value="+33"+(a.value)' action="nouveautes.php" method="post" >
+                <input type="email" name="a" value="" >
+                <output id="tel" name="tel" value="0"></output>
+                </form>
+                
+                
+                <br>
+                Type color
+                <form oninput='tel.value=(a.value)' action="nouveautes.php" method="post" >
+                <input type="color" name="a" value="" >
+                <output id="tel" name="tel" value="0"></output>
+                </form>
 
             </div>
         </div>
