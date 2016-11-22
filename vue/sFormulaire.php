@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang="fr">
     <head>
-        <title>Formulaire</title>
+        <title>Formulaires - Cours HTML 5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
